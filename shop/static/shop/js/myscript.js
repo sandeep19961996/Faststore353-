@@ -132,7 +132,6 @@ $('.minus-cart').click(function() {
 
 })
 $('.remove-cart').click(function() {
-
     var id = $(this).attr("pid").toString();
     var eml = this
     $.ajax({
@@ -146,12 +145,5 @@ $('.remove-cart').click(function() {
             document.getElementById("totalamount").innerText = data.totalamunt
             eml.parentNode.parentNode.parentNode.parentNode.remove()
         }
-
     })
-
-})
-
-var loader = document.getElementById("preloader");
-window.addEventListener("load", function() {
-    loader.style.display = "none"
 })
